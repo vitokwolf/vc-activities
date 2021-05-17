@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fffeee;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 0 10%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none outside;
+}
+
+li {
+  list-style: none;
+  width: 135px;
+}
+
+/* my edits */
+/* todo 1 */
+section ul li a:hover{
+color: tomato;
+font-weight: bold;
+text-shadow: 10px, 10px, 30px rgba(0,255,0, 0.8);
+}
+
+/* to do 2 */
+/* added text in html-list-a for potato emoji */
+
+/* to do 3 */
+/* can't figure it out without a big block of code on html and css */
+
+/* to do 4 */
+
+.tubers a{
+  background-color: chocolate;
+}
+
+/*1 TODO: Add your code to change the style of the list items when hovering over them */
+
+/* 2 TODO: Add your code to add a potato emoji to the list item */
+
+/* 3 TODO: Add your code to change the potato to a heart */
+
+/*4 TODO: Add your code to give every other list item a different background color */
+
+/*5 TODO: Add your code to make the first line of the first paragraph bold */
+
+/*6 TODO: Add your code to change the style of the first letter of the second paragraph */
