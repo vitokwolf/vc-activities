@@ -4,15 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Countdown Timer</title>
+    <title>Click Counter</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
+
   <body>
-    <div class="container">
-      <h1 class="welcome">Are you ready?</h1>
-      <button id="start">Start</button>
-      <h2 id="countdown"></h2>
-      <p id="main"></p>
+    <div>
+      <h1>Current count: <span id="count">0</span></h1>
+      <div class="container">
+        <button id="decrement">Decrement</button>
+        <button id="increment">Increment</button>
+      </div>
     </div>
     <script src="./assets/js/script.js"></script>
   </body>
