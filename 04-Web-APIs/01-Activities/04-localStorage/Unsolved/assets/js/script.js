@@ -6,23 +6,10 @@ var userEmailSpan = document.querySelector('#user-email');
 var userPasswordSpan = document.querySelector('#user-password');
 
 function renderLastRegistered() {
-
-// start my own code
   // TODO: Retrieve the last email and password from localStorage
-  var emailInput = localStorage.getItem("#email");
-  var passwordInput = localStorage.getItem("#password");
   // TODO: If they are null, return early from this function
-  if (!emailInput || !passwordInput) {
-    return ;
-  }
   // TODO: Otherwise set the text of the 'userEmailSpan' and 'userPasswordSpan' to the corresponding values from localStorage
-  else {
-    userEmailSpan.textContent = emailInput;
-    userPasswordSpan.textContent = passwordInput;
-  };
-
-// end my own code
-};
+}
 
 renderLastRegistered();
 
@@ -31,12 +18,11 @@ function displayMessage(type, message) {
   msgDiv.setAttribute('class', type);
 }
 
-signUpButton.addEventListener('click', function (event) {
+signUpButton.addEventListener('click', function(event) {
   event.preventDefault();
 
   var email = document.querySelector('#email').value;
   var password = document.querySelector('#password').value;
-
 
   if (email === '') {
     displayMessage('error', 'Email cannot be blank');
@@ -46,8 +32,6 @@ signUpButton.addEventListener('click', function (event) {
     displayMessage('success', 'Registered successfully');
 
     // TODO: Save email and password to localStorage
-    var email = localStorage.setItem("#email", JSON.stringify(email));
     // TODO: Render the last registered email and password
-    var password = localStorage.setItem("#password", JSON.stringify(password));
   }
 });
